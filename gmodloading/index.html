@@ -3,7 +3,7 @@
 	<title>Runetooncraft GMOD</title>
 		<style>
 			body {
-			background-image: url(LoadingScreen.png);            
+			background-image: url(LoadingScreenNewMaps.png);            
 			background-size: 100%;
 			background-origin: content;
 			background-repeat: no-repeat;
@@ -16,33 +16,5 @@
 		</style>
 	</head>
 <body>
-<div id="AmountOfFiles">
-<span style="font-family:Arial;font-size:22px;font-style:normal;font-weight:bold;text-decoration:none;text-transform:none;color:09CCD0;">
-Calculating amount of files that require downloading...
-</span>
-</div>
-<div id="FilesDownloading">
-<span style="font-family:Arial;font-size:22px;font-style:normal;font-weight:bold;text-decoration:none;text-transform:none;color:09CCD0;">
-<br>
-Downloading files...
-</span>
-</div>
 </body>
-
-<script type="text/javascript">
-function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode ) {
-var target = document.getElementById("header");
-function DownloadingFile( fileName ) {
-var Dfile = document.getElementById("FilesDownloading");
-Dfile.innerHTML = ("Currently Downloading: " + fileName);
-}
-function SetFilesTotal( total ) {
-var FDownlReq = document.getElementById("AmountOfFiles");
-FDownlReq.innerHTML = ("Files Remaining: " + total);
-}
-function SetFilesNeeded( needed ) {
-var FDownlReq = document.getElementById("AmountOfFiles");
-FDownlReq.innerHTML = ("Files Remaining: " + needed);
-}
-</script>
 </html>
